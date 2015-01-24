@@ -13,21 +13,20 @@
 	
 
 <target name="compile" description="compile my code">
-     <javac srcdir="." destdir="." debug="true" debuglevel="lines,source" includeantruntime="false">                                            <classpath>
-		<pathelement location="."/>
+     <mkdir dir="build" />
+     <javac srcdir="." destdir="build" debug="true" debuglevel="lines,source" includeantruntime="false">                                            <classpath>
+		<pathelement location="build"/>
 		<pathelement location="lib/junit-4.8.2.jar"/>
 	</classpath>
     </javac>
 </target>
 
   <target name="run" depends="compile" description="run the UCSBCourseTester program">
-    <java classname="UCSBCourseTester" classpath="." />
+    <java classname="UCSBCourseTester" classpath="build" />
   </target>
   
   <target name="clean" description="delete unnecessary files and directories">
-    <delete failonerror="false" verbose="true">
-      <fileset dir="." includes="*.class" />
-    </delete>
+    <delete dir="build" quiet="true" />
     <delete dir="javadoc" quiet="true" />
   </target>
 
@@ -63,11 +62,11 @@
     <junit haltonerror="no" haltonfailure="no">
        <classpath>
          <pathelement location="lib/junit-4.8.2.jar"/>
-         <pathelement location="."/>
+         <pathelement location="build"/>
        </classpath>
 
        <batchtest fork="yes">
-          <fileset dir=".">
+          <fileset dir="src">
             <!-- this will pick up every class with a name ending in Test -->
             <include name="*Test.java"/>
           </fileset>
