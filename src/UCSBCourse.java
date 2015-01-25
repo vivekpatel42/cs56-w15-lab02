@@ -6,9 +6,14 @@
 
 public class UCSBCourse {
 
-    private String dept; // Department Abbreviation (e.g. CMPSC, MATH, PSTAT)
-    private String num; // Course Number w/ suffix (e.g. "56", "3B", "120A")
-    private int units; // units course is worth
+    // Department Abbreviation (e.g. CMPSC, MATH, PSTAT)
+    private String dept; 
+    // Course Number w/ suffix (e.g. "56", "3B", "120A") 
+    private String num; 
+    //Full course title, with both dept. abbreviation and course number (e.g. "CMPSC56")
+    private String courseTitle;
+    // units course is worth
+    private int units; 
 
     /** Constructor 
 	@param dept Department Abbreviation (e.g. CMPSC, MATH, PSTAT)
@@ -16,7 +21,7 @@ public class UCSBCourse {
 	@param units Number of Units
     */
 
-    public UCSBCourse (String dept, String num, int units)
+    public UCSBCourse (String dept, String num, String courseTitle, int units)
     {
 	// assign attributes from parameters
 	this.dept = dept; 

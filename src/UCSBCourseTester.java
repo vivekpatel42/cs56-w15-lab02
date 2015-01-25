@@ -11,9 +11,9 @@ public class UCSBCourseTester {
 
     public static void main (String [] args)  {
 	
-	UCSBCourse cs56 = new UCSBCourse("CMPSC","56",4);
-	UCSBCourse math3a = new UCSBCourse("MATH","3A",4);
-	UCSBCourse pstat120a = new UCSBCourse("PSTAT","120A",4);
+	UCSBCourse cs56 = new UCSBCourse("CMPSC","56","Advanced Applications Programming",4);
+	UCSBCourse math3a = new UCSBCourse("MATH","3A","Calculus with Applications, First Course",4);
+	UCSBCourse pstat120a = new UCSBCourse("PSTAT","120A","Probability and Statistics",4);
 
 
 	// for comparing strings, should use .equals method, not ==
