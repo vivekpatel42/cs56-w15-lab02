@@ -7,6 +7,4 @@ Vivek Patel
 
 * javadoc: http://www.cs.ucsb.edu/~vivek_patel/cs56/lab02/javadoc
 
-TODO: If working with a pair partner, list both usernames above, one
-on each of the two lines, and be sure to publish javadoc to both pair
-partner's usernames.  Otherwise, delete one of the lines above.
+User: vivek_patel
