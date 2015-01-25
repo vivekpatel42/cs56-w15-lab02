@@ -1,9 +1,9 @@
 lab02
 =====
 
-lab02 for CS56, W14
+lab02 for CS56, W15
 
-TODO: Put your real name here... both real names if this is a pair partner
+Vivek Patel
 
 * javadoc: http://www.cs.ucsb.edu/~vivek_patel/cs56/lab02/javadoc
 
