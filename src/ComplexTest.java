@@ -24,8 +24,8 @@ public class ComplexTest
         // the no arg constructor should give us zero for
         // both imaginary and real parts
         Complex c = new Complex();
-        // TODO: UNCOMMENT! assertEquals(0.0,c.getReal(),TOL);
-        // TODO: UNCOMMENT! assertEquals(0.0,c.getImag(),TOL);
+        assertEquals(0.0,c.getReal(),TOL);
+        assertEquals(0.0,c.getImag(),TOL);
 	
     }
     
@@ -33,9 +33,9 @@ public class ComplexTest
     {
 	// the no arg constructor should give us zero for
 	// both imaginary and real parts
-	// TODO: UNCOMMENT! Complex c = new Complex( 1.2, -3.4 );
-	// TODO: UNCOMMENT! assertEquals( 1.2, c.getReal(), TOL);
-	// TODO: UNCOMMENT! assertEquals( -3.4, c.getImag(), TOL);
+	Complex c = new Complex( 1.2, -3.4 );
+	assertEquals( 1.2, c.getReal(), TOL);
+	assertEquals( -3.4, c.getImag(), TOL);
     }
     
     @Test public void testSetters()
@@ -43,10 +43,10 @@ public class ComplexTest
 	// the no arg constructor should give us zero for
 	// both imaginary and real parts
 	Complex c = new Complex();
-	// TODO: UNCOMMENT! c.setReal(-3.4);
-	// TODO: UNCOMMENT! c.setImag(1.2);
-	// TODO: UNCOMMENT! assertEquals( -3.4, c.getReal(), TOL);
-	// TODO: UNCOMMENT! assertEquals( 1.2, c.getImag(), TOL);
+	c.setReal(-3.4);
+	c.setImag(1.2);
+	assertEquals( -3.4, c.getReal(), TOL);
+	assertEquals( 1.2, c.getImag(), TOL);
     }
     
     
@@ -60,8 +60,8 @@ public class ComplexTest
     {
 	// the no arg constructor should give us zero for
 	// both imaginary and real parts
-	// TODO: UNCOMMENT! Complex c = new Complex(1.2, -3.4);
-	// TODO: UNCOMMENT! assertEquals("1.2 + -3.4i",c.toString());
+	Complex c = new Complex(1.2, -3.4);
+	assertEquals("1.2 + -3.4i",c.toString());
     }
     
     @Test public void testToString3()
@@ -69,8 +69,8 @@ public class ComplexTest
         // the no arg constructor should give us zero for
         // both imaginary and real parts
                                                                                                                                               
-	// TODO: UNCOMMENT! Complex c = new Complex(2.0, 3.0);
-	// TODO: UNCOMMENT! assertEquals("2.0 + 3.0i",c.toString());
+	Complex c = new Complex(2.0, 3.0);
+	assertEquals("2.0 + 3.0i",c.toString());
     }
     
 }

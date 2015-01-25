@@ -16,7 +16,10 @@ public class Complex
      * noarg Constructor for objects of class Complex
      */
     
-
+    public Complex() {
+	real = 0;
+	imag = 0;
+    }
   
      /**
      * Two-arg Constructor for objects of class Complex
@@ -24,14 +27,20 @@ public class Complex
      * @param imagPart imaginary part
      */
   
- 
+     public Complex(double realPart, double imagPart) {
+	this.real = realPart;
+	this.imag = imagPart;
+     }
     
     /**
      * set the real part
      * 
      * @param  r   the new real part
      */
-      
+    
+    public void setReal(double r) {
+	real = r;
+    }
   
     
     /**
@@ -40,7 +49,9 @@ public class Complex
      * @param  i   the new imaginary part
      */
 
-    
+    public void setImag(double i) {
+	imag = i;
+    }
 
     
     /**
@@ -48,12 +59,20 @@ public class Complex
      * 
      * @return real part
      */
+     
+    public double getReal() {
+	return real;
+    }
 
     /**
      * get the imaginary part
      * 
      * @return imaginary part
      */
+    
+    public double getImag() {
+	return imag;
+    }
     
 
     
@@ -63,5 +82,8 @@ public class Complex
      *  @return formatted complex number (e.g. 2.0 + 3.0i)
      */
 
-    
+    public String toString() {
+	String s = String.format("%.4f + %.4f", this.real, this.imag);
+	return s;
+    }
 }

@@ -1,7 +1,7 @@
 /** UCSBCourse is a class to represent a UCSB Course.
  @author Phill Conrad
  @author @@@ Vivek Patel
- @version 01/19/2015 for lab01, cs56, S13
+ @version 01/19/2015 for lab02, cs56, W15
 */
 
 public class UCSBCourse {
