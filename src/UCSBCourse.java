@@ -10,7 +10,7 @@ public class UCSBCourse {
     private String dept; 
     // Course Number w/ suffix (e.g. "56", "3B", "120A") 
     private String num; 
-    //Full course title, with both dept. abbreviation and course number (e.g. "CMPSC56")
+    //Full formal course title (e.g. "Advanced Applications Programming")
     private String courseTitle;
     // units course is worth
     private int units; 
@@ -18,6 +18,7 @@ public class UCSBCourse {
     /** Constructor 
 	@param dept Department Abbreviation (e.g. CMPSC, MATH, PSTAT)
 	@param num Course Number including suffix (e.g. "56", "3B", "120A")
+	@param courseTitle Full formal course title (e.g. "Advanced Applications Programming") 
 	@param units Number of Units
     */
 
@@ -26,6 +27,7 @@ public class UCSBCourse {
 	// assign attributes from parameters
 	this.dept = dept; 
 	this.num = num;
+	this.courseTitle = courseTitle;
 	this.units = units;
     }
 
@@ -53,5 +55,13 @@ public class UCSBCourse {
     {
 	return this.dept + this.num; // string concatenation
     }
+    
+    /**
+      Get full formal course title (e.g. "Advanced Applications Programming")
+    */
+    
+     public String getTitle() {
+	 return this.courseTitle;
+     }
 
 } // class UCSBCourse
