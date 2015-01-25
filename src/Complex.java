@@ -83,7 +83,7 @@ public class Complex
      */
 
     public String toString() {
-	String s = String.format("%.4f + %.4f", this.real, this.imag);
+	String s = String.format("%.1f + %.1fi", this.real, this.imag);
 	return s;
     }
 }

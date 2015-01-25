@@ -63,5 +63,10 @@ public class UCSBCourse {
      public String getTitle() {
 	 return this.courseTitle;
      }
+     
+     public String toString() {
+	String s = getFullCourseName() + ": " + getTitle() + " (" + getUnits() + " units)";
+	return s;
+     }
 
 } // class UCSBCourse
